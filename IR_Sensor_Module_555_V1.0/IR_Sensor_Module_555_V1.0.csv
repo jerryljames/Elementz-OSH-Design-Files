@@ -1,0 +1,13 @@
+Comment,Designator,Footprint,LCSC_PART
+0.1uF Unpolarized capacitor,"C1,C2",C_0805_2012Metric,
+IR LED Light emitting diode,D1,LED_D5.0mm,
+MountingHole ,H1,MountingHole_3.2mm_M3,
+Pin Header,J1,PinHeader_1x04_P2.54mm_Vertical,
+HS0038B ,J2,PinHeader_1x3_P2.54_Drill1.1mm,
+"Jumper Jumper, normally closed",JP1,PinHeader_1x02_P2.54mm_Vertical,
+PWR LED Light emitting diode,Pled1,LED_0805_2012Metric,
+22K Resistor,"R1,R4",R_0805_2012Metric,
+2K Resistor,"R2,R3",R_0805_2012Metric,
+10K Potentiometer,"RV1,RV2",Potentiometer_Bourns_3339P_Vertical_HandSoldering,
+SENSE LED Light emitting diode,Sled1,LED_0805_2012Metric,
+NE555P ,U1,SOIC-8_W5.3mm,

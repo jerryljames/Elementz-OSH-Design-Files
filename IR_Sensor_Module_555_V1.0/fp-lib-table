@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name OSHW-logo)(type Legacy)(uri "/home/jerryl/Desktop/Work in progress/OSHW_logo_KiCad_scalable/lib/OSHW-logo.mod")(options "")(descr ""))
+)
