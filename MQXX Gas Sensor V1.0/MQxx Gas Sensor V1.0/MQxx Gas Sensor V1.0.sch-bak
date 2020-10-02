@@ -4,18 +4,18 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "IRF520 MOSFET Driver Module"
-Date "2020-07-09"
+Title "MQxx Gas Sensor"
+Date "2020-07-29"
 Rev "V1.0"
-Comp "Elementz Engineers Guild PVt Ltd"
-Comment1 "Drawn by : Jerryl"
+Comp "Elementz Engineers Guild Pvt Ltd"
+Comment1 "Drawn by : Jerryl "
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
 $Bitmap
-Pos 9950 6850
-Scale 0.900000
+Pos 9850 6850
+Scale 1.000000
 Data
 89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 02 8D 00 00 00 DF 08 02 00 00 00 1C 16 7E 
 CF 00 00 00 03 73 42 49 54 08 08 08 DB E1 4F E0 00 00 00 09 70 48 59 73 00 00 0E 74 00 00 0E 74 
@@ -2700,189 +2700,337 @@ DF 9C A1 40 F5 45 00 00 00 00 49 45 4E 44 AE 42 60 82
 EndData
 $EndBitmap
 $Comp
+L Device:LED D1
+U 1 1 5F11DBF8
+P 2300 3650
+F 0 "D1" V 2339 3532 50  0000 R CNN
+F 1 "PWR_LED" V 2248 3532 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2300 3650 50  0001 C CNN
+F 3 "~" H 2300 3650 50  0001 C CNN
+	1    2300 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
 L Device:R R1
-U 1 1 5F0762F7
-P 4050 4200
-F 0 "R1" H 4120 4246 50  0000 L CNN
-F 1 "1K" H 4120 4155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3980 4200 50  0001 C CNN
-F 3 "~" H 4050 4200 50  0001 C CNN
-	1    4050 4200
+U 1 1 5F11E540
+P 2300 3150
+F 0 "R1" H 2370 3196 50  0000 L CNN
+F 1 "1K" H 2370 3105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2230 3150 50  0001 C CNN
+F 3 "~" H 2300 3150 50  0001 C CNN
+	1    2300 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5F11EE11
+P 6000 2700
+F 0 "R4" H 6070 2746 50  0000 L CNN
+F 1 "4.7K" H 6070 2655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5930 2700 50  0001 C CNN
+F 3 "~" H 6000 2700 50  0001 C CNN
+	1    6000 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5F11F235
+P 5450 2900
+F 0 "R3" H 5520 2946 50  0000 L CNN
+F 1 "5.1E" H 5520 2855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5380 2900 50  0001 C CNN
+F 3 "~" H 5450 2900 50  0001 C CNN
+	1    5450 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Opamp_Dual_Generic U1
+U 3 1 5F12691C
+P 6000 4800
+F 0 "U1" H 5900 4550 50  0001 L CNN
+F 1 "LM393" H 5900 4650 50  0001 L CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 6000 4800 50  0001 C CNN
+F 3 "~" H 6000 4800 50  0001 C CNN
+	3    6000 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5F12796D
+P 2900 4150
+F 0 "C1" H 3015 4196 50  0000 L CNN
+F 1 "0.1uF" H 3015 4105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2938 4000 50  0001 C CNN
+F 3 "~" H 2900 4150 50  0001 C CNN
+	1    2900 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5F1293CA
+P 7500 3400
+F 0 "#PWR0101" H 7500 3150 50  0001 C CNN
+F 1 "GND" H 7505 3227 50  0000 C CNN
+F 2 "" H 7500 3400 50  0001 C CNN
+F 3 "" H 7500 3400 50  0001 C CNN
+	1    7500 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J1
+U 1 1 5F1299A6
+P 8350 3300
+F 0 "J1" H 8322 3182 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 8322 3273 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8350 3300 50  0001 C CNN
+F 3 "~" H 8350 3300 50  0001 C CNN
+	1    8350 3300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6250 4800 6550 4800
+Text GLabel 6550 4800 2    50   Input ~ 0
+DOUT
+Wire Wire Line
+	5650 4900 5400 4900
+Text GLabel 5400 4900 3    50   Input ~ 0
+AOUT
+$Comp
+L Device:R_POT RV1
+U 1 1 5F12B812
+P 5100 4700
+F 0 "RV1" H 5031 4746 50  0000 R CNN
+F 1 "10K" H 5031 4655 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Vishay_T73YP_Vertical" H 5100 4700 50  0001 C CNN
+F 3 "~" H 5100 4700 50  0001 C CNN
+	1    5100 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 4700 5650 4700
+$Comp
+L power:GND #PWR0102
+U 1 1 5F12DEB2
+P 5100 5450
+F 0 "#PWR0102" H 5100 5200 50  0001 C CNN
+F 1 "GND" H 5105 5277 50  0000 C CNN
+F 2 "" H 5100 5450 50  0001 C CNN
+F 3 "" H 5100 5450 50  0001 C CNN
+	1    5100 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0103
+U 1 1 5F12E9FF
+P 5100 3950
+F 0 "#PWR0103" H 5100 3800 50  0001 C CNN
+F 1 "+5V" H 5115 4123 50  0000 C CNN
+F 2 "" H 5100 3950 50  0001 C CNN
+F 3 "" H 5100 3950 50  0001 C CNN
+	1    5100 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 3400 8150 3400
+Wire Wire Line
+	8150 3100 8050 3100
+Wire Wire Line
+	8150 3200 8050 3200
+Text GLabel 8050 3100 0    50   Input ~ 0
+AOUT
+Text GLabel 8050 3200 0    50   Input ~ 0
+DOUT
+$Comp
+L power:+5V #PWR0104
+U 1 1 5F13478B
+P 7700 3550
+F 0 "#PWR0104" H 7700 3400 50  0001 C CNN
+F 1 "+5V" H 7715 3723 50  0000 C CNN
+F 2 "" H 7700 3550 50  0001 C CNN
+F 3 "" H 7700 3550 50  0001 C CNN
+	1    7700 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 3300 7500 3400
+Wire Wire Line
+	7500 3300 8150 3300
+Wire Wire Line
+	7850 3400 7850 3550
+Wire Wire Line
+	7850 3550 7700 3550
+$Comp
+L power:+5V #PWR0105
+U 1 1 5F1371A7
+P 2300 2800
+F 0 "#PWR0105" H 2300 2650 50  0001 C CNN
+F 1 "+5V" H 2315 2973 50  0000 C CNN
+F 2 "" H 2300 2800 50  0001 C CNN
+F 3 "" H 2300 2800 50  0001 C CNN
+	1    2300 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5F1371AD
+P 2300 4550
+F 0 "#PWR0106" H 2300 4300 50  0001 C CNN
+F 1 "GND" H 2305 4377 50  0000 C CNN
+F 2 "" H 2300 4550 50  0001 C CNN
+F 3 "" H 2300 4550 50  0001 C CNN
+	1    2300 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0107
+U 1 1 5F137738
+P 2900 2800
+F 0 "#PWR0107" H 2900 2650 50  0001 C CNN
+F 1 "+5V" H 2915 2973 50  0000 C CNN
+F 2 "" H 2900 2800 50  0001 C CNN
+F 3 "" H 2900 2800 50  0001 C CNN
+	1    2900 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5F13773E
+P 2900 4550
+F 0 "#PWR0108" H 2900 4300 50  0001 C CNN
+F 1 "GND" H 2905 4377 50  0000 C CNN
+F 2 "" H 2900 4550 50  0001 C CNN
+F 3 "" H 2900 4550 50  0001 C CNN
+	1    2900 4550
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R2
-U 1 1 5F076B1F
-P 4700 4350
-F 0 "R2" H 4770 4396 50  0000 L CNN
-F 1 "1K" H 4770 4305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4630 4350 50  0001 C CNN
-F 3 "~" H 4700 4350 50  0001 C CNN
-	1    4700 4350
+U 1 1 5F1392A4
+P 2900 3150
+F 0 "R2" H 2970 3196 50  0000 L CNN
+F 1 "1K" H 2970 3105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2830 3150 50  0001 C CNN
+F 3 "~" H 2900 3150 50  0001 C CNN
+	1    2900 3150
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D1
-U 1 1 5F0770BF
-P 4700 3900
-F 0 "D1" V 4739 3783 50  0000 R CNN
-F 1 "RED" V 4648 3783 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4700 3900 50  0001 C CNN
-F 3 "~" H 4700 3900 50  0001 C CNN
-	1    4700 3900
-	0    -1   -1   0   
-$EndComp
-$Comp
-L dk_Transistors-FETs-MOSFETs-Single:IRF520PBF Q1
-U 1 1 5F079044
-P 5600 3550
-F 0 "Q1" H 5708 3603 60  0000 L CNN
-F 1 "IRF520PBF" H 5708 3497 60  0000 L CNN
-F 2 "digikey-footprints:TO-220-3" H 5800 3950 60  0001 L CNN
-F 3 "http://www.vishay.com/docs/91015/sihf510.pdf" H 5800 4050 60  0001 L CNN
-F 4 "IRF520PBF-ND" H 5800 4150 60  0001 L CNN "Digi-Key_PN"
-F 5 "IRF520PBF" H 5800 4250 60  0001 L CNN "MPN"
-F 6 "Discrete Semiconductor Products" H 5800 4350 60  0001 L CNN "Category"
-F 7 "Transistors - FETs, MOSFETs - Single" H 5800 4450 60  0001 L CNN "Family"
-F 8 "MOSFET N-CH 100V 9.2A TO-220-3" H 5800 4550 60  0001 L CNN "Description"
-F 9 "Vishay Siliconix" H 5800 4650 60  0001 L CNN "Manufacturer"
-F 10 "Active" H 5800 4750 60  0001 L CNN "Status"
-	1    5600 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR01
-U 1 1 5F07A017
-P 5000 4700
-F 0 "#PWR01" H 5000 4450 50  0001 C CNN
-F 1 "GND" H 5005 4527 50  0000 C CNN
-F 2 "" H 5000 4700 50  0001 C CNN
-F 3 "" H 5000 4700 50  0001 C CNN
-	1    5000 4700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5300 3650 4700 3650
-Wire Wire Line
-	4700 3650 4700 3750
-Wire Wire Line
-	5600 3750 5600 4700
-Wire Wire Line
-	5600 4700 5000 4700
-Wire Wire Line
-	4700 4500 4700 4700
-Wire Wire Line
-	4700 4700 5000 4700
-Connection ~ 5000 4700
-Wire Wire Line
-	4700 4200 4700 4050
-Connection ~ 4700 4700
-Wire Wire Line
-	4050 3650 4700 3650
-Connection ~ 4700 3650
-Wire Wire Line
-	4050 3650 4050 4050
-Wire Wire Line
-	4050 4350 4050 4700
-$Comp
-L dk_Terminal-Blocks-Wire-to-Board:1935161 J2
-U 1 1 5F090FAF
-P 6700 2650
-F 0 "J2" V 6791 2572 50  0000 R CNN
-F 1 "1935161" V 6700 2572 50  0000 R CNN
-F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 6900 2850 60  0001 L CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 6900 2950 60  0001 L CNN
-F 4 "277-1667-ND" H 6900 3050 60  0001 L CNN "Digi-Key_PN"
-F 5 "1935161" H 6900 3150 60  0001 L CNN "MPN"
-F 6 "Connectors, Interconnects" H 6900 3250 60  0001 L CNN "Category"
-F 7 "Terminal Blocks - Wire to Board" H 6900 3350 60  0001 L CNN "Family"
-F 8 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 6900 3450 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/phoenix-contact/1935161/277-1667-ND/568614" H 6900 3550 60  0001 L CNN "DK_Detail_Page"
-F 10 "TERM BLK 2POS SIDE ENTRY 5MM PCB" H 6900 3650 60  0001 L CNN "Description"
-F 11 "Phoenix Contact" H 6900 3750 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 6900 3850 60  0001 L CNN "Status"
-	1    6700 2650
-	0    -1   -1   0   
-$EndComp
-$Comp
-L dk_Terminal-Blocks-Wire-to-Board:1935161 J3
-U 1 1 5F0922E2
-P 6700 4350
-F 0 "J3" V 6791 4272 50  0000 R CNN
-F 1 "1935161" V 6700 4272 50  0000 R CNN
-F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 6900 4550 60  0001 L CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 6900 4650 60  0001 L CNN
-F 4 "277-1667-ND" H 6900 4750 60  0001 L CNN "Digi-Key_PN"
-F 5 "1935161" H 6900 4850 60  0001 L CNN "MPN"
-F 6 "Connectors, Interconnects" H 6900 4950 60  0001 L CNN "Category"
-F 7 "Terminal Blocks - Wire to Board" H 6900 5050 60  0001 L CNN "Family"
-F 8 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 6900 5150 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/phoenix-contact/1935161/277-1667-ND/568614" H 6900 5250 60  0001 L CNN "DK_Detail_Page"
-F 10 "TERM BLK 2POS SIDE ENTRY 5MM PCB" H 6900 5350 60  0001 L CNN "Description"
-F 11 "Phoenix Contact" H 6900 5450 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 6900 5550 60  0001 L CNN "Status"
-	1    6700 4350
+L Device:LED D2
+U 1 1 5F13AADB
+P 2900 3650
+F 0 "D2" V 2939 3533 50  0000 R CNN
+F 1 "DO_LED" V 2848 3533 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2900 3650 50  0001 C CNN
+F 3 "~" H 2900 3650 50  0001 C CNN
+	1    2900 3650
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5600 2650 5600 3350
+	2300 2800 2300 3000
 Wire Wire Line
-	6500 2650 5600 2650
+	2300 3300 2300 3500
+Wire Wire Line
+	2900 2800 2900 3000
+Wire Wire Line
+	2900 3300 2900 3500
+Wire Wire Line
+	2900 3800 2900 3900
+Wire Wire Line
+	2900 4300 2900 4550
+Wire Wire Line
+	2900 3900 3100 3900
+Connection ~ 2900 3900
+Wire Wire Line
+	2900 3900 2900 4000
+Text GLabel 3100 3900 2    50   Input ~ 0
+DOUT
+Wire Wire Line
+	2300 3800 2300 4550
 $Comp
-L Connector:Conn_01x03_Male J1
-U 1 1 5F09A3EF
-P 3200 3900
-F 0 "J1" H 3172 3832 50  0000 R CNN
-F 1 "Conn_01x03_Male" H 3172 3923 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 3200 3900 50  0001 C CNN
-F 3 "~" H 3200 3900 50  0001 C CNN
-	1    3200 3900
+L Sensor_Gas:MQ-6 U?1
+U 1 1 5F14452D
+P 5450 2250
+F 0 "U?1" H 5650 2600 50  0000 C CNN
+F 1 "MQ-X" H 5700 1900 50  0000 C CNN
+F 2 "Sensor:MQ-6" H 5500 1800 50  0001 C CNN
+F 3 "https://www.winsen-sensor.com/d/files/semiconductor/mq-6.pdf" H 5450 2500 50  0001 C CNN
+	1    5450 2250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4050 4700 4700 4700
+	5450 1850 4950 1850
 Wire Wire Line
-	3400 3800 3700 3800
+	4950 1850 4950 2150
 Wire Wire Line
-	3700 3800 3700 3650
+	4950 2350 5050 2350
 Wire Wire Line
-	3700 3650 4050 3650
-Connection ~ 4050 3650
+	5050 2150 4950 2150
+Connection ~ 4950 2150
 Wire Wire Line
-	3400 4000 3700 4000
+	4950 2150 4950 2350
+$Comp
+L power:+5V #PWR0109
+U 1 1 5F1494B7
+P 4950 1750
+F 0 "#PWR0109" H 4950 1600 50  0001 C CNN
+F 1 "+5V" H 4965 1923 50  0000 C CNN
+F 2 "" H 4950 1750 50  0001 C CNN
+F 3 "" H 4950 1750 50  0001 C CNN
+	1    4950 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 5F1494BD
+P 6000 3250
+F 0 "#PWR0110" H 6000 3000 50  0001 C CNN
+F 1 "GND" H 6005 3077 50  0000 C CNN
+F 2 "" H 6000 3250 50  0001 C CNN
+F 3 "" H 6000 3250 50  0001 C CNN
+	1    6000 3250
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	3700 4000 3700 4700
+	4950 1750 4950 1850
+Connection ~ 4950 1850
 Wire Wire Line
-	3700 4700 4050 4700
-Connection ~ 4050 4700
-Text Label 3400 3800 0    50   ~ 0
-SIG
-Text Label 3400 4000 0    50   ~ 0
-GND
-Text Label 6300 4350 0    50   ~ 0
-GND
+	5850 2150 6000 2150
 Wire Wire Line
-	6250 4250 6250 2550
+	6000 2150 6000 2350
 Wire Wire Line
-	6250 2550 6500 2550
+	6000 2350 5850 2350
 Wire Wire Line
-	6250 4250 6500 4250
+	6000 2150 6100 2150
+Connection ~ 6000 2150
+Text GLabel 6100 2150 2    50   Input ~ 0
+AOUT
 Wire Wire Line
-	6250 4350 6250 4700
+	6000 2550 6000 2350
+Connection ~ 6000 2350
 Wire Wire Line
-	6250 4700 5600 4700
+	5450 2650 5450 2750
 Wire Wire Line
-	6250 4350 6500 4350
-Connection ~ 5600 4700
-Text Label 6300 4250 0    50   ~ 0
-VIN
-Text Label 6300 2550 0    50   ~ 0
-V+
-Text Label 6300 2650 0    50   ~ 0
-V-
-NoConn ~ 3400 3900
+	6000 2850 6000 3150
+Wire Wire Line
+	5450 3050 5450 3150
+Wire Wire Line
+	5450 3150 6000 3150
+Connection ~ 6000 3150
+Wire Wire Line
+	6000 3150 6000 3250
+$Comp
+L Device:C C2
+U 1 1 5F166297
+P 6300 4300
+F 0 "C2" H 6415 4346 50  0000 L CNN
+F 1 "0.1uF" H 6415 4255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6338 4150 50  0001 C CNN
+F 3 "~" H 6300 4300 50  0001 C CNN
+	1    6300 4300
+	1    0    0    -1  
+$EndComp
 $Bitmap
-Pos 6450 7100
+Pos 6450 7200
 Scale 1.000000
 Data
 89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 00 BE 00 00 00 C8 08 03 00 00 00 61 D1 AB 
@@ -3071,4 +3219,51 @@ EA CF C7 0E 4A E9 FF 5E C5 F7 C6 D9 1D 3A F9 2F 9D 76 30 40 4B CD 16 80 00 00 00
 AE 42 60 82 
 EndData
 $EndBitmap
+$Comp
+L Device:Opamp_Dual_Generic U1
+U 1 1 5F125453
+P 5950 4800
+F 0 "U1" H 5750 5100 50  0000 C CNN
+F 1 "LM393" H 6050 4950 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 5950 4800 50  0001 C CNN
+F 3 "~" H 5950 4800 50  0001 C CNN
+	1    5950 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 4850 5100 5300
+Wire Wire Line
+	5100 5300 5900 5300
+Wire Wire Line
+	5900 5300 5900 5100
+Connection ~ 5100 5300
+Wire Wire Line
+	5100 5300 5100 5450
+Wire Wire Line
+	5100 3950 5100 4050
+Wire Wire Line
+	5100 4050 5900 4050
+Wire Wire Line
+	6300 4050 6300 4150
+Connection ~ 5100 4050
+Wire Wire Line
+	5100 4050 5100 4550
+Wire Wire Line
+	5900 4050 5900 4500
+Connection ~ 5900 4050
+Wire Wire Line
+	5900 4050 6300 4050
+$Comp
+L power:GND #PWR01
+U 1 1 5F221728
+P 6300 4500
+F 0 "#PWR01" H 6300 4250 50  0001 C CNN
+F 1 "GND" H 6450 4450 50  0000 C CNN
+F 2 "" H 6300 4500 50  0001 C CNN
+F 3 "" H 6300 4500 50  0001 C CNN
+	1    6300 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 4500 6300 4450
 $EndSCHEMATC
