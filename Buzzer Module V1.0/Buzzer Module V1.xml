@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/jerryl/Git/Work/PCB DEsigners Repo/pcb_designers_repo/Elementz/Ongoing/Buzzer Module V1.0/Buzzer Module V1.0/Buzzer Module V1.0.sch</source>
+    <date>Mon Nov  9 23:45:41 2020</date>
+    <tool>Eeschema 5.1.5-52549c5~86~ubuntu16.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Buzzer Module </title>
+        <company>Elementz Engineers Guild Pvt Ltd</company>
+        <rev>V1.0</rev>
+        <date>2020-11-09</date>
+        <source>Buzzer Module V1.0.sch</source>
+        <comment number="1" value="Verified by : Jerryl"/>
+        <comment number="2" value="Drawn by : Anandu"/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="BZ1">
+      <value>Buzzer</value>
+      <footprint>Buzzer_Beeper:Buzzer_12x9.5RM7.6</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Buzzer" description="Buzzer, polarized"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FA8F2E6</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>BC847B_215</value>
+      <footprint>digikey-footprints:SOT-23-3</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/BC847_SER.pdf</datasheet>
+      <fields>
+        <field name="Category">Discrete Semiconductor Products</field>
+        <field name="DK_Datasheet_Link">https://assets.nexperia.com/documents/data-sheet/BC847_SER.pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/nexperia-usa-inc/BC847B,215/1727-2921-1-ND/763460</field>
+        <field name="Description">TRANS NPN 45V 0.1A SOT23</field>
+        <field name="Digi-Key_PN">1727-2921-1-ND</field>
+        <field name="Family">Transistors - Bipolar (BJT) - Single</field>
+        <field name="MPN">BC847B,215</field>
+        <field name="Manufacturer">Nexperia USA Inc.</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="Buzzer-Module-V1.0-rescue" part="BC847B_215-dk_Transistors-Bipolar-BJT-Single" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FA90012</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>1K</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FA90B77</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>1K</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FA96AEB</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>Conn_01x03_Male</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x03_Male" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FAA1CA1</tstamp>
+    </comp>
+    <comp ref="H1">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Buzzer-Module-V1.0-rescue" part="MountingHole-Mechanical" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FAA7197</tstamp>
+    </comp>
+    <comp ref="H2">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Buzzer-Module-V1.0-rescue" part="MountingHole-Mechanical" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FAA76B1</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Buzzer-Module-V1.0-rescue" part="BC847B_215-dk_Transistors-Bipolar-BJT-Single">
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">BC847B_215-dk_Transistors-Bipolar-BJT-Single</field>
+        <field name="Footprint">digikey-footprints:SOT-23-3</field>
+        <field name="Datasheet">https://assets.nexperia.com/documents/data-sheet/BC847_SER.pdf</field>
+        <field name="Digi-Key_PN">1727-2921-1-ND</field>
+        <field name="MPN">BC847B,215</field>
+        <field name="Category">Discrete Semiconductor Products</field>
+        <field name="Family">Transistors - Bipolar (BJT) - Single</field>
+        <field name="DK_Datasheet_Link">https://assets.nexperia.com/documents/data-sheet/BC847_SER.pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/nexperia-usa-inc/BC847B,215/1727-2921-1-ND/763460</field>
+        <field name="Description">TRANS NPN 45V 0.1A SOT23</field>
+        <field name="Manufacturer">Nexperia USA Inc.</field>
+        <field name="Status">Active</field>
+      </fields>
+      <pins>
+        <pin num="1" name="B" type="input"/>
+        <pin num="2" name="E" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Buzzer-Module-V1.0-rescue" part="MountingHole-Mechanical">
+      <footprints>
+        <fp>MountingHole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole-Mechanical</field>
+      </fields>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x03_Male">
+      <description>Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x03_Male</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Buzzer">
+      <description>Buzzer, polarized</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>*Buzzer*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">BZ</field>
+        <field name="Value">Buzzer</field>
+      </fields>
+      <pins>
+        <pin num="1" name="-" type="passive"/>
+        <pin num="2" name="+" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Buzzer-Module-V1.0-rescue">
+      <uri>/home/jerryl/Git/Work/PCB DEsigners Repo/pcb_designers_repo/Elementz/Ongoing/Buzzer Module V1.0/Buzzer Module V1.0/Buzzer Module V1.0-rescue.lib</uri>
+    </library>
+    <library logical="Connector">
+      <uri>/usr/share/kicad/library/Connector.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>/usr/share/kicad/library/Device.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="VCC">
+      <node ref="BZ1" pin="1"/>
+      <node ref="J1" pin="3"/>
+      <node ref="R2" pin="1"/>
+    </net>
+    <net code="2" name="GND">
+      <node ref="Q1" pin="2"/>
+      <node ref="J1" pin="1"/>
+    </net>
+    <net code="3" name="IN">
+      <node ref="R1" pin="2"/>
+      <node ref="J1" pin="2"/>
+    </net>
+    <net code="4" name="Net-(Q1-Pad1)">
+      <node ref="Q1" pin="1"/>
+      <node ref="R1" pin="1"/>
+    </net>
+    <net code="5" name="Net-(BZ1-Pad2)">
+      <node ref="Q1" pin="3"/>
+      <node ref="R2" pin="2"/>
+      <node ref="BZ1" pin="2"/>
+    </net>
+  </nets>
+</export>

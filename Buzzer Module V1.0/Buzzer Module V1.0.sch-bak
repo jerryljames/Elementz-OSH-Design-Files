@@ -1,0 +1,153 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Buzzer BZ1
+U 1 1 5FA8F2E6
+P 5150 3450
+F 0 "BZ1" H 5302 3479 50  0000 L CNN
+F 1 "Buzzer" H 5302 3388 50  0000 L CNN
+F 2 "Buzzer_Beeper:Buzzer_12x9.5RM7.6" V 5125 3550 50  0001 C CNN
+F 3 "~" V 5125 3550 50  0001 C CNN
+	1    5150 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Transistors-Bipolar-BJT-Single:BC847B_215 Q1
+U 1 1 5FA90012
+P 4750 4050
+F 0 "Q1" H 4938 4103 60  0000 L CNN
+F 1 "BC847B_215" H 4938 3997 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 4950 4250 60  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BC847_SER.pdf" H 4950 4350 60  0001 L CNN
+F 4 "1727-2921-1-ND" H 4950 4450 60  0001 L CNN "Digi-Key_PN"
+F 5 "BC847B,215" H 4950 4550 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 4950 4650 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 4950 4750 60  0001 L CNN "Family"
+F 8 "https://assets.nexperia.com/documents/data-sheet/BC847_SER.pdf" H 4950 4850 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/nexperia-usa-inc/BC847B,215/1727-2921-1-ND/763460" H 4950 4950 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 45V 0.1A SOT23" H 4950 5050 60  0001 L CNN "Description"
+F 11 "Nexperia USA Inc." H 4950 5150 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 4950 5250 60  0001 L CNN "Status"
+	1    4750 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5FA90B77
+P 4850 3450
+F 0 "R2" H 4920 3496 50  0000 L CNN
+F 1 "1K" H 4920 3405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4780 3450 50  0001 C CNN
+F 3 "~" H 4850 3450 50  0001 C CNN
+	1    4850 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 3350 5000 3350
+Wire Wire Line
+	5000 3350 5000 3300
+Wire Wire Line
+	5000 3300 4850 3300
+Wire Wire Line
+	4850 3300 4850 3150
+Connection ~ 4850 3300
+Wire Wire Line
+	4850 3600 5000 3600
+Wire Wire Line
+	5000 3600 5000 3550
+Wire Wire Line
+	5000 3550 5050 3550
+Wire Wire Line
+	4850 3600 4850 3850
+Connection ~ 4850 3600
+$Comp
+L Device:R R1
+U 1 1 5FA96AEB
+P 4250 4050
+F 0 "R1" V 4043 4050 50  0000 C CNN
+F 1 "1K" V 4134 4050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4180 4050 50  0001 C CNN
+F 3 "~" H 4250 4050 50  0001 C CNN
+	1    4250 4050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4400 4050 4550 4050
+Wire Wire Line
+	4850 4250 4850 4450
+Wire Wire Line
+	4100 4050 3900 4050
+$Comp
+L power:GND #PWR01
+U 1 1 5FA97621
+P 4850 4450
+F 0 "#PWR01" H 4850 4200 50  0001 C CNN
+F 1 "GND" H 4855 4277 50  0000 C CNN
+F 2 "" H 4850 4450 50  0001 C CNN
+F 3 "" H 4850 4450 50  0001 C CNN
+	1    4850 4450
+	1    0    0    -1  
+$EndComp
+Text GLabel 4850 3150 1    50   Input ~ 0
+VCC
+Text Label 3900 4050 0    50   ~ 0
+IN
+$Comp
+L Connector:Conn_01x03_Male J1
+U 1 1 5FAA1CA1
+P 3200 3700
+F 0 "J1" H 3308 3981 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 3308 3890 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3200 3700 50  0001 C CNN
+F 3 "~" H 3200 3700 50  0001 C CNN
+	1    3200 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 3600 3600 3600
+Wire Wire Line
+	3400 3700 3600 3700
+Wire Wire Line
+	3400 3800 3600 3800
+Text GLabel 3600 3800 2    50   Input ~ 0
+VCC
+Text Label 3600 3700 0    50   ~ 0
+IN
+Text Label 3600 3600 0    50   ~ 0
+GND
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5FAA7197
+P 5700 3200
+F 0 "H1" H 5800 3246 50  0000 L CNN
+F 1 "MountingHole" H 5800 3155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 5700 3200 50  0001 C CNN
+F 3 "~" H 5700 3200 50  0001 C CNN
+	1    5700 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5FAA76B1
+P 5700 3450
+F 0 "H2" H 5800 3496 50  0000 L CNN
+F 1 "MountingHole" H 5800 3405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm" H 5700 3450 50  0001 C CNN
+F 3 "~" H 5700 3450 50  0001 C CNN
+	1    5700 3450
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
