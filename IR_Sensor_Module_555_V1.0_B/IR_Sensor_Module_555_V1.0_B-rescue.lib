@@ -1,0 +1,139 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# 0022232041-dk_Rectangular-Connectors-Headers-Male-Pins
+#
+DEF 0022232041-dk_Rectangular-Connectors-Headers-Male-Pins J 0 40 Y Y 1 F N
+F0 "J" -100 50 50 H V R CNN
+F1 "0022232041-dk_Rectangular-Connectors-Headers-Male-Pins" 150 -150 50 H V C CNN
+F2 "digikey-footprints:PinHeader_1x4_P2.54mm_Drill1.02mm" 200 200 60 H I L CNN
+F3 "https://www.molex.com/pdm_docs/sd/022232041_sd.pdf" 200 300 60 H I L CNN
+F4 "WM4202-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "0022232041" 200 500 60 H I L CNN "MPN"
+F6 "Connectors, Interconnects" 200 600 60 H I L CNN "Category"
+F7 "Rectangular Connectors - Headers, Male Pins" 200 700 60 H I L CNN "Family"
+F8 "https://www.molex.com/pdm_docs/sd/022232041_sd.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/molex/0022232041/WM4202-ND/26671" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "CONN HEADER VERT 4POS 2.54MM" 200 1000 60 H I L CNN "Description"
+F11 "Molex" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S -50 0 350 -100 1 1 0 f
+S -10 -45 10 -65 1 1 0 F
+S 90 -45 110 -65 1 1 0 F
+S 190 -45 210 -65 1 1 0 F
+S 290 -45 310 -65 1 1 0 F
+X ~ 1 0 100 100 D 50 50 1 1 P
+X ~ 2 100 100 100 D 50 50 1 1 P
+X ~ 3 200 100 100 D 50 50 1 1 P
+X ~ 4 300 100 100 D 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# 640456-3-dk_Rectangular-Connectors-Headers-Male-Pins
+#
+DEF 640456-3-dk_Rectangular-Connectors-Headers-Male-Pins J 0 40 Y Y 1 F N
+F0 "J" -100 50 50 H V R CNN
+F1 "640456-3-dk_Rectangular-Connectors-Headers-Male-Pins" 100 -300 50 H V C CNN
+F2 "digikey-footprints:PinHeader_1x3_P2.54_Drill1.1mm" 200 200 60 H I L CNN
+F3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=640456&DocType=Customer+Drawing&DocLang=English" 200 300 60 H I L CNN
+F4 "A19470-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "640456-3" 200 500 60 H I L CNN "MPN"
+F6 "Connectors, Interconnects" 200 600 60 H I L CNN "Category"
+F7 "Rectangular Connectors - Headers, Male Pins" 200 700 60 H I L CNN "Family"
+F8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=640456&DocType=Customer+Drawing&DocLang=English" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/te-connectivity-amp-connectors/640456-3/A19470-ND/259010" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "CONN HEADER VERT 3POS 2.54MM" 200 1000 60 H I L CNN "Description"
+F11 "TE Connectivity AMP Connectors" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+A 100 -50 112 -1534 -266 0 1 0 N 0 -100 200 -100
+S -50 0 250 -100 1 1 0 f
+S -10 -45 10 -65 1 1 0 F
+S 90 -45 110 -65 1 1 0 F
+S 190 -45 210 -65 1 1 0 F
+X ~ 1 0 100 100 D 50 50 1 1 P
+X ~ 2 100 100 100 D 50 50 1 1 P
+X ~ 3 200 100 100 D 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# HS0038B_IR_Rxr
+#
+DEF HS0038B_IR_Rxr J 0 40 Y Y 1 F N
+F0 "J" -100 250 50 H V R CNN
+F1 "HS0038B_IR_Rxr" 100 -300 50 H V C CNN
+F2 "digikey-footprints:PinHeader_1x3_P2.54_Drill1.1mm" 200 400 60 H I L CNN
+F3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=640456&DocType=Customer+Drawing&DocLang=English" 200 250 60 H I L CNN
+F4 "A19470-ND" 200 350 60 H I L CNN "Digi-Key_PN"
+F5 "640456-3" 200 450 60 H I L CNN "MPN"
+F6 "Connectors, Interconnects" 200 600 60 H I L CNN "Category"
+F7 "Rectangular Connectors - Headers, Male Pins" 200 700 60 H I L CNN "Family"
+F8 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=640456&DocType=Customer+Drawing&DocLang=English" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/te-connectivity-amp-connectors/640456-3/A19470-ND/259010" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "CONN HEADER VERT 3POS 2.54MM" 200 1000 60 H I L CNN "Description"
+F11 "TE Connectivity AMP Connectors" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+A 100 -50 112 -1534 -266 0 1 0 N 0 -100 200 -100
+T 900 100 100 50 0 0 0 GND Normal 0 C C
+T 900 0 100 50 0 0 0 OUT Normal 0 C C
+T 900 200 100 50 0 0 0 VCC Normal 0 C C
+S -50 -100 -50 200 0 0 0 N
+S -50 200 250 200 0 0 0 N
+S 250 -100 250 200 0 0 0 N
+S 250 -100 -50 -100 0 1 0 N
+S -10 -45 10 -65 1 1 0 F
+S 90 -45 110 -65 1 1 0 F
+S 190 -45 210 -65 1 1 0 F
+X ~ 1 0 300 100 D 50 50 1 1 P
+X ~ 2 100 300 100 D 50 50 1 1 P
+X ~ 3 200 300 100 D 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# MountingHole-Mechanical
+#
+DEF MountingHole-Mechanical H 0 40 Y Y 1 F N
+F0 "H" 0 200 50 H V C CNN
+F1 "MountingHole-Mechanical" 0 125 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*
+$ENDFPLIST
+DRAW
+C 0 0 50 0 1 50 N
+ENDDRAW
+ENDDEF
+#
+# NE555P-dk_Clock-Timing-Programmable-Timers-and-Oscillators
+#
+DEF NE555P-dk_Clock-Timing-Programmable-Timers-and-Oscillators U 0 40 Y Y 1 F N
+F0 "U" -350 250 60 H V L CNN
+F1 "NE555P-dk_Clock-Timing-Programmable-Timers-and-Oscillators" 50 -350 60 H V L CNN
+F2 "digikey-footprints:DIP-8_W7.62mm" 200 200 60 H I L CNN
+F3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fne555" 200 300 60 H I L CNN
+F4 "296-1411-5-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "NE555P" 200 500 60 H I L CNN "MPN"
+F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
+F7 "Clock/Timing - Programmable Timers and Oscillators" 200 700 60 H I L CNN "Family"
+F8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fne555" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/texas-instruments/NE555P/296-1411-5-ND/277057" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "IC OSC SINGLE TIMER 100KHZ 8-DIP" 200 1000 60 H I L CNN "Description"
+F11 "Texas Instruments" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S -350 200 350 -300 0 1 0 f
+X GND 1 -450 100 100 R 50 50 1 1 W
+X TRIG 2 -500 0 150 R 50 50 1 1 I
+X OUT 3 -500 -100 150 R 50 50 1 1 O
+X RESET 4 -500 -200 150 R 50 50 1 1 I
+X CONT 5 500 -200 150 L 50 50 1 1 B
+X THRES 6 500 -100 150 L 50 50 1 1 I
+X DISCH 7 500 0 150 L 50 50 1 1 O
+X VCC 8 450 100 100 L 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+#End Library
